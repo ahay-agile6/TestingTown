@@ -1,0 +1,304 @@
+/* Bootstrap */
+
+body {
+margin:10px 15px;
+}
+
+ol {
+font-size:14px;
+margin:10px 5px;
+}
+
+/*Mock Mobile Case*/
+
+.port-mock {
+	height:460px;
+	width:250px;
+	border:2px #333 solid;
+	border-radius:10px;
+	background: #444;
+	padding:5px;
+	box-shadow: rgba(0, 0, 0, .50) 5px 5px 10px;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.port-mock-body {
+	position:relative;
+	height:446px;
+	width:236px;
+	border:1px #222 solid;
+	border-radius:5px;
+	background: #555;
+	padding:28px 12px;
+	overflow: hidden;
+}
+
+.port-mock-body::after {
+	content:'';
+	position:absolute;
+	height:385px;
+	width:55px;
+	top:50px;
+	left:95px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-mock-body::before {
+	content:'';
+	position:absolute;
+	height:385px;
+	width:35px;
+	top:160px;
+	left:115px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-mock-screen {
+	position:relative;
+	height:375px;
+	width:210px;
+	background: #999;
+	overflow-y:scroll;
+	outline: 2px #333 solid;
+	z-index: 500;
+}
+
+.port-button {
+	border: 1px #777 solid;
+	border-radius: 25px;
+	width:24px;
+	height:24px;
+	margin:10px auto;
+	box-shadow: rgba(0, 0, 0, .25) -1px -1px 1px;
+}
+
+.port-button-icon  {
+	height:12px;
+	width:12px;
+	margin:5px auto;
+	border: 1px #888 solid;
+}
+
+/*Mock Mobile Case END*/
+
+/*Mock Monitor*/
+
+.port-monitor-mock {
+	height:460px;
+	width:600px;
+	border:2px #333 solid;
+	border-radius:5px;
+	background: #444;
+	padding:3px;
+	box-shadow: rgba(0, 0, 0, .50) 5px 5px 10px;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.port-monitor-mock-body {
+	position:relative;
+	height:450px;
+	width:590px;
+	border:1px #222 solid;
+	border-radius:5px;
+	background: #555;
+	padding:20px;
+	overflow: hidden;
+}
+
+.port-monitor-mock-body::after {
+	content:'';
+	position:absolute;
+  height: 695px;
+  width: 100px;
+  top: -165px;
+  left: 170px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-monitor-mock-body::before {
+	content:'';
+	position:absolute;
+  height: 450px;
+  width: 35px;
+  top: 95px;
+  left: 420px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-mock-monitor-screen {
+	position:relative;
+	height:385px;
+	width:550px;
+	background: #999;
+	overflow-y:scroll;
+	outline: 2px #333 solid;
+	z-index: 500;
+}
+
+.port-monitor-button {
+	border: 1px #777 solid;
+	border-radius: 25px;
+	width:24px;
+	height:24px;
+	margin:10px 25px;
+	float:right;
+	box-shadow: rgba(0, 0, 0, .25) -1px -1px 1px;
+}
+
+.port-monitor-button-icon  {
+	height:12px;
+	width:12px;
+	margin:5px auto;
+	border: 2px #C2D1FF solid;
+	border-radius: 25px;
+}
+
+/*Mock Monitor END*/
+
+.port-info {
+color: #fff;
+margin:15px 0 -10px -50px;
+padding: 10px 250px 10px 50px;
+font-weight:bold;
+font-size:16px;
+//border-left:1px #5C85FF dotted;
+  background: -webkit-linear-gradient(left, #5C85FF 75%, #fff 95%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #5C85FF 75%, #fff 95%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #5C85FF 75%, #fff 95%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #5C85FF 75%, #fff 95%); /* Standard syntax */
+}
+
+.port-info  div{
+color: #fff;
+font-weight:normal;
+font-size:14px;
+}
+
+.port-image-title {
+color:#5C85FF;
+font-weight:bold;
+margin:20px 0 5px 0;
+}
+
+.bank-porfolio-container {
+margin:15px auto;
+//background:#eee;
+max-width:1000px;
+}
+
+.port-desktop {
+padding:0 ;
+}
+
+.port-mobile {
+padding:10px ;
+}
+
+.porfolio-container {
+margin:15px auto;
+border:1px #3385FF solid;
+border-radius: 5px;
+background:#999;
+max-width:800px;
+}
+
+.port-background .row {
+border-right: 1px #3385FF solid;
+}
+
+.port-upper-row{
+border-bottom:1px #3385FF dotted;
+border-top-left-radius: 5px;
+overflow:hidden;
+background:#eee;
+}
+
+.port-title {
+font-weight:bold;
+text-align:center;
+padding:10px;
+}
+
+.port-description {
+border-left:1px #3385FF dotted;
+padding:10px;
+}
+
+.port-link {
+background:#fff;
+padding:10px;
+box-shadow:inset rgba(0, 0, 0, .15) 2px 2px 2px;
+}
+
+.port-link  i{
+font-size:18px;
+color:#003D99
+}
+
+.port-snapshot {
+ padding: 5px;
+ text-align:center;
+ vertical-align:middle;
+}
+
+.port-snapshot i{
+ color:#ddd;
+ font-size:35px;
+ margin-top:5px;
+}
+
+@media (max-width: 992px) { 
+	.bank-porfolio-container {
+		margin:5px auto;
+		//max-width:1000px;
+	}
+
+	.port-monitor-mock {
+		margin:15px auto;
+	}
+	
+	.port-mock {
+		margin:15px auto;
+	}
+	
+}
+
+@media (max-width: 767px) {
+
+body {
+margin:5px;
+}
+
+	.port-title {
+	text-align:left;
+	padding: 5px 10px;
+	border-bottom:1px #3385FF dotted;
+	}
+
+	.port-background .row {
+	border-right: none;
+	}
+	
+	.port-upper-row{
+border-top-right-radius: 5px;
+}
+	
+	.port-link {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+}

@@ -1,0 +1,84 @@
+/* Bootstrap */
+
+/*Mock Monitor*/
+
+.port-monitor-mock {
+	//height:460px;
+	display:block;
+	border:2px #333 solid;
+	border-radius:5px;
+	background: #444;
+	padding:2px;
+	box-shadow: rgba(0, 0, 0, .50) 5px 5px 10px;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.port-monitor-mock-body {
+	position:relative;
+	//height:450px;
+	width:100%;
+	border:1px #222 solid;
+	border-radius:5px;
+	background: #555;
+	padding:10px;
+	overflow: hidden;
+}
+
+.port-monitor-mock-body::after {
+	content:'';
+	position:absolute;
+  height: 695px;
+  width: 100px;
+  top: -165px;
+  left: 170px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-monitor-mock-body::before {
+	content:'';
+	position:absolute;
+  height: 550px;
+  width: 35px;
+  top: 95px;
+  left: 420px;
+	background: #777;
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg); /* Standard syntax */
+}
+
+.port-mock-monitor-screen {
+	position:relative;
+	//height:385px;
+	width:100%;
+	background: #000;
+	//overflow-y:scroll;
+	outline: 2px #333 solid;
+	z-index: 500;
+}
+
+.port-mock-monitor-screen img {
+display:block;
+	margin: 0 auto;
+}
+
+.port-image-title {
+	margin: 30px 0 4px 0;
+    font-weight: normal;
+    color: #FEB41C;
+	font-size:20px;
+	text-shadow: rgba(0, 0, 0, .50) 2px 2px 5px;
+}
+
+.resume-container {
+    color: #fff;
+	font-size:14px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*Mock Monitor END*/
