@@ -30,46 +30,66 @@
 	
 <script>
     
-$("#content").load(function() {
-  var width = document.getElementById("content").offsetWidth;
-  var height = document.getElementById("content").offsetHeight;
-  alert(width+":"+height);
-});  
+
     
 function closeAll() {
-        $("#port-art-A, #hideA").hide();
-        $("#port-art-B, #hideB").hide();
-        $("#port-art-C, #hideC").hide();
-        $("#port-art-D, #hideD").hide();
-        $("#port-art-E, #hideE").hide();
-        $("#port-art-F, #hideF").hide();
-		$("#showA, #showB, #showC, #showD, #showE, #showF").show();
+    //what is #hide?
+//        $("#port-art-A, #hideA").hide();
+//        $("#port-art-B, #hideB").hide();
+//        $("#port-art-C, #hideC").hide();
+//        $("#port-art-D, #hideD").hide();
+//        $("#port-art-E, #hideE").hide();
+//        $("#port-art-F, #hideF").hide();
+    //what is #show?
+//		$("#showA, #showB, #showC, #showD, #showE, #showF").show(); //<- what does this do?
+    $('[id^="port-art-"]').hide();
+    $('[id^="show"]').show();
 }
 
+
 function iconInactive() {
-		$('#sect-A-icon').removeClass('icon-active');
-		$('#sect-B-icon').removeClass('icon-active');
-		$('#sect-C-icon').removeClass('icon-active');
-		$('#sect-D-icon').removeClass('icon-active');
-		$('#sect-E-icon').removeClass('icon-active');
-		$('#sect-F-icon').removeClass('icon-active');
-		$('#sect-A-label').removeClass('icon-active');
-		$('#sect-B-label').removeClass('icon-active');
-		$('#sect-C-label').removeClass('icon-active');
-		$('#sect-D-label').removeClass('icon-active');
-		$('#sect-E-label').removeClass('icon-active');
-		$('#sect-F-label').removeClass('icon-active');
+//		$('#sect-A-icon').removeClass('icon-active');
+//		$('#sect-B-icon').removeClass('icon-active');
+//		$('#sect-C-icon').removeClass('icon-active');
+//		$('#sect-D-icon').removeClass('icon-active');
+//		$('#sect-E-icon').removeClass('icon-active');
+//		$('#sect-F-icon').removeClass('icon-active');
+//		$('#sect-A-label').removeClass('icon-active');
+//		$('#sect-B-label').removeClass('icon-active');
+//		$('#sect-C-label').removeClass('icon-active');
+//		$('#sect-D-label').removeClass('icon-active');
+//		$('#sect-E-label').removeClass('icon-active');
+//		$('#sect-F-label').removeClass('icon-active');
+    
+    //grab all of the icons and labels with this class on it and remove the icon-active class
+    $('[class*="graphic-tab-"]').removeClass('icon-active');
+    
+    //you could also do this:
+    //$('.graphic-tab-icon').removeClass('icon-active');
+    //$('.graphic-tab-label').removeClass('icon-active');
+    
 }
 
 $(document).ready(function(){
+    
+//    $("#content").load(function() {
+//      var width = document.getElementById("content").offsetWidth;
+//      var height = document.getElementById("content").offsetHeight;
+//      alert(width+":"+height);
+//    });  
 
     $("#buttonA").click(function(){
 		closeAll();
         //$("#port-art-A").show();
 		iconInactive();
 		$('#sect-A-icon').addClass('icon-active');
-		$('#sect-A-label').addClass('icon-active')
-        document.getElementById("content").innerHTML='<object data="3dart.html" ></object>';
+		$('#sect-A-label').addClass('icon-active');         
+        //$("content").innerHTML='<object data="3dart.html" ></object>';
+        
+        //load the url specified and alert when the content is loaded
+        $("#content").load("3dart.html", function() {
+            alert('content loaded');
+        });
     });
 
     $("#buttonB").click(function(){
